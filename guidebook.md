@@ -33,7 +33,7 @@ the record.
 4)  **Open** the \<DemoHub Product Template\>. Attached to the record is
     DemoHub Orlando Narrative Template.docx.
     
-    "NOTE:" If the attachment count does not match the number of
+    > "NOTE:" If the attachment count does not match the number of
     attachments, delete the record and run a DemoHub sync again.
     
     ![](./images/image4.png)
@@ -55,7 +55,7 @@ to an instance so a Narrative can be followed.
 <br>
     ![](./images/image6.png)
     ![](./images/image7.png)
-    "NOTE: " Configurations are applied in the following order:
+    > "NOTE: " Configurations are applied in the following order:
     Plugins \> OOB/True-up Store Applications \> Store Applications \>
     Update Sets \> XML \> Scripts \> Included Configurations
 
@@ -233,7 +233,7 @@ using the DemoHub Theme Generator.
     *Separator modules and vertical lines(\$nav-hr-color)* **\#FDF8FA**\
     *Button color(\$navpage-button-color)* **\#FDF8FA**
     
-    > Note:" The colors will update in real-time to simulate what the
+    > "Note:" The colors will update in real-time to simulate what the
     Platform UI will look like. Feel free to experiment with different
     colors and values.
     
@@ -454,11 +454,10 @@ Application.
 
 10) Click **Save**.\
     \
-    ![](./images/image49.png) \
-    \
-    "Note:" Make sure to save frequently when building the flow.
+    ![](./images/image49.png)     
+    >"Note:" Make sure to save frequently when building the flow.
 
-Kick off the existing workflow and wait
+### Kick off the existing workflow and wait
 
 The first thing we need to simulate is the setting of the *State* to
 *Work in Progress*. This will kick off the OOB flow to create Subtasks.
@@ -486,13 +485,13 @@ the *State* then waiting for the E-Commerce Subtask to be created.
     to add an Action, Flow Logic, or Subflow \> Flow Logic \> Do the
     following until)**.
 
-6)  Click the **+** under *Do the following***.**\
+6)  Click the **+** under *Do the following*.\
     \
     ![](./images/image52.png) 
 
-7)  Click **(Action \> ServiceNow Core \> Lookup Records)**.\
-    \
-    "Note:" Select **Lookup Records**, plural.
+7)  Click **(Action \> ServiceNow Core \> Lookup Records)**.
+    
+    > "Note:" Select **Lookup Records**, plural.
 
 8)  In the *Table* field, search for **GDPR** and select **Subtask
     \[x\_snc\_gdpr\_erase\_subtask\]**.\
@@ -511,7 +510,7 @@ the *State* then waiting for the E-Commerce Subtask to be created.
     ![](./images/image56.png) 
 10) Click **Done**.
 
-11) Click the **+** under *Lookup Subtask Records***.**\
+11) Click the **+** under *Lookup Subtask Records*.\
     \
     ![](./images/image57.png) 
 
@@ -541,7 +540,7 @@ the *State* then waiting for the E-Commerce Subtask to be created.
     \
     ![](./images/image49.png)
 
-Update the Subtasks
+### Update the Subtasks
 
 Now that we verified the E-Commerce Subtasks were created, we need to
 assign them to the Software team. After assignment, we need to close
@@ -549,9 +548,9 @@ each of the Subtask's Subtasks. Actions 3-6 will jump over navigating to
 each of the three E-Commerce Subtasks and updating them.
 
 1)  Click **(+Select to add an Action, Flow Logic, or Subflow \>
-    Action \> ServiceNow Core \> Lookup Record)**.\
-    \
-    "Note:" Select **Lookup Record**, singular.
+    Action \> ServiceNow Core \> Lookup Record)**.
+    
+    >"Note:" Select **Lookup Record**, singular.
 
 2)  In the *Table* field, search for **GDPR** and select **Subtask
     \[x\_snc\_gdpr\_erase\_subtask\]**.\
@@ -578,9 +577,9 @@ each of the three E-Commerce Subtasks and updating them.
     ![](./images/image65.png) 
 
 7)  Click **(+Select to add an Action, Flow Logic, or Subflow \>
-    Action \> ServiceNow Core \> Lookup Records)**.\
-    \
-    "Note:" Select **Lookup Records**, plural.
+    Action \> ServiceNow Core \> Lookup Records)**.
+    
+    > "Note:" Select **Lookup Records**, plural.
 
 8)  In *Table* search for GDPR then select **Subtask
     \[x\_snc\_gdpr\_erase\_subtask\]**.\
@@ -623,7 +622,7 @@ each of the three E-Commerce Subtasks and updating them.
     \
     ![](./images/image49.png) 
 
-Update the Request
+### Update the Request
 
 At this point, we have closed the E-Commerce Subtasks with notes. If we
 need to navigate into one of the Subtasks, we will see all the proper
@@ -651,7 +650,7 @@ demo know the jump is complete.
     \
     ![](./images/image73.png)
 
-Testing the Flow
+### Testing the Flow
 
 We now need to test the flow. Let's create a new Request and verify the
 Flow works before assigning it to a Jump.
@@ -686,9 +685,8 @@ Flow works before assigning it to a Jump.
 5)  Click **Open Current Record \> Open Record**. You should see the
     *Subtask for E-Commerce* change to a *State* of *Closed Complete*.\
     \
-    ![](./images/image80.png)\
-    \
-Narrative Jump
+    ![](./images/image80.png)
+### Narrative Jump
 
 In this exercise we will learn how to create the Narrative Jump record
 so we can execute the Flow we just created when we want. In this use
@@ -747,7 +745,7 @@ collaborate. Stopping a narrative to navigate and fill out forms can
 detract from the message. Narrative Jump allows you to skip over the
 parts of a process that are not important to show in a demo.
 
-Challenge
+### Challenge
 
 Create another Jump to close the remaining Subtasks. Don't forget to
 Approve the Subtask for SAP Payroll before closing it. The first
@@ -757,15 +755,15 @@ showing the value of the app.\
 \
 ![](./images/image88.png)
 
-Complete the Update Set
+### Complete the Update Set
 
 Once you are complete with the Narrative Jump, navigate to the Update
 Set record and change the state to Complete. You can export to xml if
 you want share with another instance or keep for later.
 
-Creating Performance Analytics Data
+# Creating Performance Analytics Data
 
-Generators
+## Generators
 
 The DemoHub PA Data Generator tool uses Generators to create scores for
 PA Indicators. The Generator record has a 1 to 1 relationship with each
@@ -788,7 +786,7 @@ Dashboard have already been created.
 3)  Set the *Name* to **GDPR PA Data Generators** then **Submit and Make
     Current**.
 
-Requests created today
+## Requests created today
 
 In this exercise we will learn how to create scores for a single
 Indicator. We will use the *Requests created today* Indicator learn
@@ -932,12 +930,13 @@ about the various settings of the generator tool.
 
 17) We can see the generated scores.\
     \
-    ![](./images/image96.png) \
-    \
-    "Note:" If the Analytics Hub is empty, clear the cache by entering
+    ![](./images/image96.png) 
+    
+    >"Note:" If the Analytics Hub is empty, clear the cache by entering
     **<span>cache</span>.do** into the Filter Navigator and hit **Enter**.
-    **Refresh** the Analytics Hub page.\
-    \
+    **Refresh** the Analytics Hub page.
+    <br>
+
     ![](./images/image97.png) \
     \
     ![](./images/image98.png) 
@@ -948,9 +947,8 @@ about the various settings of the generator tool.
 19) Click on **Contact Type** or **State** to see the distribution of
     data within the breakdown.\
     \
-    ![](./images/image100.png) \
-    \
-    "Note:" So far only L1 Scores have been loaded. If you drill down on
+    ![](./images/image100.png)     
+    > "Note:" So far only L1 Scores have been loaded. If you drill down on
     a breakdown you will not see any scores for other breakdowns.
 
 20) Change the *Time series* to **By week AVG** then drill back into the
@@ -960,7 +958,7 @@ about the various settings of the generator tool.
     \
     ![](./images/image102.png) 
 
-Subtasks Created Today
+## Subtasks Created Today
 
 In this exercise we will learn how to copy settings from another
 Generator. We want the Subtasks to match the Graph of the Requests
@@ -987,16 +985,16 @@ much easier to just copy the previous Graph.
     ![A screenshot of a cell phone Description automatically
     generated](./images/image104.png) 
 
-5)  **Load** the scores. This should take 2-4 minutes.\
-    \
-    "Note:" Continue to the next section while you wait for the scores
+5)  **Load** the scores. This should take 2-4 minutes.
+    
+    > "Note:" Continue to the next section while you wait for the scores
     to generate.
 
 6)  Once the Load completes, open **Analytics Hub** for this Indicator.\
     \
     ![](./images/image105.png) 
 
-Open Requests
+## Open Requests
 
 In this exercise we will learn how to adjust the breakdowns, so the data
 tells the story we want. We want to show an increasing backlog of
@@ -1019,19 +1017,19 @@ stuck in a *Pending* *State*.
 5)  Change the *Order* values for the *State* breakdown as follows:\
     *\
     Open*: **1**\
-    *Work in Progress*: **2\
-    ***Pending*: **3\
+    *Work in Progress*: **2**\
+    *Pending*: **3**\
     \
-    **![](./images/image107.png) **\
-    **
+    ![](./images/image107.png)
+    
 
 6)  Change the *Standard Deviation* for *Contact Type* to **0.5**.
 
 7)  Change the *Order* values for the *Contact Type* breakdown as
     follows:\
     \
-    *Phone*: **1\
-    ***Self-Service*: **2\
+    *Phone*: **1**\
+    *Self-Service*: **2**\
     \
     **Leave the other elements as-is.
 
@@ -1065,9 +1063,9 @@ stuck in a *Pending* *State*.
     blockers are addressed.\
     \
     \
-    ![](./images/image110.png) \
-    \
-    "Note:" A high *Variance* value can reinforce the story of
+    ![](./images/image110.png) 
+    
+    > "Note:" A high *Variance* value can reinforce the story of
     inconsistent execution. Low *Variance* will show a process
     consistently executing.
 
@@ -1076,9 +1074,9 @@ stuck in a *Pending* *State*.
     efficiency if Customers submitted more requests via Self-service.\
     \
     \
-    ![](./images/image111.png) \
-    \
-    "Note:" The breakdown values are clearly separated when we set the
+    ![](./images/image111.png) 
+    
+    >"Note:" The breakdown values are clearly separated when we set the
     *Standard Deviations* to **0.5** with 4 elements.
 
 14) Drill into the **State** breakdown. We can see Open is the most
@@ -1087,20 +1085,19 @@ stuck in a *Pending* *State*.
     forecast to their coming workload. Sounds like a place for process
     improvement.\
     \
-    ![](./images/image112.png) \
-    \
-    "Note:" The breakdown values are closer together separated when we
+    ![](./images/image112.png) 
+    
+    >"Note:" The breakdown values are closer together separated when we
     set the *Standard Deviations* to **0.75** with 3 elements.
 
 15) Drill into the **Request Age** breakdown. The breakdown is too noisy
     to determine anything useful.\
     \
-    ![](./images/image113.png) \
-    \
-    "Note:" The breakdown elements are very close together when we set
+    ![](./images/image113.png) 
+    > "Note:" The breakdown elements are very close together when we set
     the *Standard Deviations* to **1.75** with 4 elements.
 
-Open Subtasks
+## Open Subtasks
 
 Earlier in the Lab we found some Subtasks were requiring an Approval and
 others were unassigned. In this exercise we will learn how to generate
@@ -1141,23 +1138,23 @@ process causing performance issues.
     \
     ![](./images/image115.png) 
 
-7)  **Load** the scores. This should take 10 minutes.\
-    \
-    Note:" Continue to the next section while you wait for the scores to
+7)  **Load** the scores. This should take 10 minutes.
+    
+    >"Note:" Continue to the next section while you wait for the scores to
     generate.
 
 9)  Open **Analytics Hub** for this Indicator once the Load completes.
 
 10) Set the *Date Range* to **Custom \> \[2020-10-31\] --
-    \[2020-12-30\]\
+    \[2020-12-30\]**\
     \
-    **![](./images/image116.png) **\
-    **
+    ![](./images/image116.png) 
+    
 
 11) Set the *Time series* to **By week AVG.\
     \
-    **![](./images/image117.png) **\
-    **
+    ![](./images/image117.png)
+    
 
 12) Drill into the **Assignment Group** and select **Unassigned**. Drill
     into the **Configuration item**. We can see *Unassigned* is the most
@@ -1166,7 +1163,7 @@ process causing performance issues.
     \
     ![](./images/image118.png) 
 
-Requests Open for more than 30 Days
+## Requests Open for more than 30 Days
 
 With GDPR, all erasure requests need to be completed within 30 days.
 Let's create a Generator for *Requests Open for more than 30 days* that
@@ -1178,11 +1175,10 @@ Requests in a **Pending** *State*. In the *Record Snapshot* tab, set the
 ![](./images/image119.png) 
 
 ![](./images/image120.png) \
-![](./images/image121.png) \
-\
-"Note:" We can see the record we created earlier.
+![](./images/image121.png) 
+> "Note:" We can see the record we created earlier.
 
-Dashboard
+## Dashboard
 
 Navigate to **(GDPR Personal Data Erasure Request \> Dashboard).** Your
 Dashboard should look something like the images below.\
@@ -1190,7 +1186,7 @@ Dashboard should look something like the images below.\
 ![](./images/image122.png) \
 ![](./images/image123.png) 
 
-Complete the Update Set
+### Complete the Update Set
 
 Once you are complete with the Generators, navigate to the Update Set
 record and change the state to Complete. You can export to xml if you
