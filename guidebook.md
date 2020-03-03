@@ -52,9 +52,7 @@ to an instance so a Narrative can be followed.
 2)  **Open** the \<DemoHub Showcase TS20 - SCT1104\> record.
 
 3)  Review the different Related Lists to see how this configuration will affect this instance.
-<br>
-   /
-   /
+
     ![](./images/image6.png)
 
     ![](./images/image7.png)
