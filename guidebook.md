@@ -53,7 +53,9 @@ to an instance so a Narrative can be followed.
 
 3)  Review the different Related Lists to see how this configuration will affect this instance.
 <br>
+   
     ![](./images/image6.png)
+    
     ![](./images/image7.png)
     > "NOTE: " Configurations are applied in the following order:
     Plugins \> OOB/True-up Store Applications \> Store Applications \>
