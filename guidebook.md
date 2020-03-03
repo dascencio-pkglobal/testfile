@@ -1031,7 +1031,7 @@ stuck in a *Pending* *State*.
     *Phone*: **1**\
     *Self-Service*: **2**\
     \
-    **Leave the other elements as-is.
+    Leave the other elements as-is.
 
 8)  Change the *Standard Deviation* for *Request Age* to **1.75**.
 
@@ -1151,7 +1151,7 @@ process causing performance issues.
     ![](./images/image116.png) 
     
 
-11) Set the *Time series* to **By week AVG.\
+11) Set the *Time series* to **By week AVG.**\
     \
     ![](./images/image117.png)
     
